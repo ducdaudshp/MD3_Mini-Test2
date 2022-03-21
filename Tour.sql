@@ -140,9 +140,15 @@ select *from TypeOfTours;
 select *from Tours;
 select *from Bill;
 
+# Thống kê số lượng tour của các thành phố
+select count(nameLocation), C.nameCity from TravelLocation
+   join City C on C.idCity = TravelLocation.city_id
+    group by C.nameCity;
+
+# Tính số tour có ngày bắt đầu trong tháng 3 năm 2020
 
 
-
+# Tính số tour có ngày kết thúc trong tháng 4 năm 2020
 
 
 
