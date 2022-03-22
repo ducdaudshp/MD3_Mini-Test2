@@ -146,11 +146,13 @@ select count(nameLocation), C.nameCity from TravelLocation
     group by C.nameCity;
 
 # Tính số tour có ngày bắt đầu trong tháng 3 năm 2020
-
+select count(idTours) as 'so tour bat dau trong thang 3' from Tours
+    where month(idBeginOfDate) = 03;
 
 # Tính số tour có ngày kết thúc trong tháng 4 năm 2020
 
-
+select count(idTours) as 'So toour ket thuc trong thang 4' from Tours
+    where month(endOfDate) = 04;
 
 
 
